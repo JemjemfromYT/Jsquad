@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      text-align: center;
+    }
+
+    .coming-soon {
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .coming-soon h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .coming-soon p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="coming-soon">
+    <h1>COMING SOON PA GUYZ 🚀</h1>
+    <p>Stay tuned for something exciting!</p>
+  </div>
+</body>
+</html>

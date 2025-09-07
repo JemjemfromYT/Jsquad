@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>J Squad</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div id="preloader">
+  <h2 id="loadingText">Loading... 0%</h2>
+</div>
+
+
+
+
+<img src="jSquadFlag.webp" id="jSquadFlag">
+<div id="mainContent" style="display: none;">
+  <!-- All your website content goes here -->
+
+
+
+
+<!-- From Uiverse.io by JustCode14 --> 
+<label class="switch">
+  <input checked="true" id="checkbox" type="checkbox" / onclick="darkMode()">
+  <span class="slider">
+    <div class="star star_1"></div>
+    <div class="star star_2"></div>
+    <div class="star star_3"></div>
+    <svg viewBox="0 0 16 16" class="cloud_1 cloud">
+      <path
+        transform="matrix(.77976 0 0 .78395-299.99-418.63)"
+        fill="#fff"
+        d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
+      ></path>
+    </svg>
+  </span>
+</label>
+
+
+
+  <div class="login-container" id="loginContainer">
+    <h2>Welcome Back</h2>
+    <form>
+      <input type="text" placeholder="Username" required class="myInput">
+      <input type="password" placeholder="Password" required class="myInput">
+      <!-- From Uiverse.io by Bodyhc --> 
+<button type="submit" id="pay-button" class="pay-btn">
+  <span>Login</span>
+  <span class="icon">
+    <svg
+      width="40px"
+      height="40px"
+      viewBox="0 0 24 24"
+      fill="#000"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g id="Interface / Credit_Card_01">
+        <path
+          id="Vector"
+          d="M3 11V15.8002C3 16.9203 3 17.4801 3.21799 17.9079C3.40973 18.2842 3.71547 18.5905 4.0918 18.7822C4.5192 19 5.07899 19 6.19691 19H17.8031C18.921 19 19.48 19 19.9074 18.7822C20.2837 18.5905 20.5905 18.2842 20.7822 17.9079C21 17.4805 21 16.9215 21 15.8036V11M3 11V9M3 11H21M3 9V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V9M3 9H21M7 15H11M21 11V9"
+          stroke="#ffff"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </g></svg
+  ></span>
+  <div id="fingerprint-container">
+    <svg
+      style="width: 100%; height: 100%;"
+      preserveAspectRatio="xMidYMid meet"
+      height="430"
+      width="430"
+      viewBox="0 0 430 430"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g>
+        <g opacity="1" transform="matrix(1, 0, 0, 1, 215, 215)">
+          <path
+            d="M0,167.5 C92.5,167.5 167.5,92.5 167.5,0 C167.5,-92.5 92.5,-167.5 0,-167.5 C-92.5,-167.5 -167.5,-92.5 -167.5,0 C-167.5,92.5 -92.5,167.5 0,167.5z"
+            stroke-width="12"
+            stroke-opacity="1"
+            stroke="rgb(255,255,255)"
+            class="primary"
+            fill-opacity="0"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+          ></path>
+        </g>
+        <g opacity="1" transform="matrix(1, 0, 0, 1, 215, 215)">
+          <path
+            d="M0,-30 C0,-30 0,30 0,30 M-30,0 C-30,0 -30,-30 -30,-30 C-30,-46.569000244140625 -16.569000244140625,-60 0,-60 C16.569000244140625,-60 30,-46.569000244140625 30,-30 M30,0 C30,0 30,30 30,30 C30,46.569000244140625 16.569000244140625,60 0,60 C-16.569000244140625,60 -30,46.569000244140625 -30,30 M20,-86.58599853515625 C13.744000434875488,-88.7969970703125 7.013000011444092,-90 0,-90 C-33.137001037597656,-90 -60,-63.137001037597656 -60,-30 C-60,-30 -60,30 -60,30 C-60,47.77000045776367 -52.275001525878906,63.736000061035156 -40,74.72200012207031 M-20,86.58599853515625 C-13.744000434875488,88.7969970703125 -7.013000011444092,90 0,90 C33.137001037597656,90 60,63.137001037597656 60,30 C60,30 60,-30 60,-30 C60,-47.77000045776367 52.275001525878906,-63.736000061035156 40,-74.72200012207031 M-70,-86.572998046875 C-82.50800323486328,-71.11599731445312 -90,-51.43299865722656 -90,-30 C-90,-30 -90,30 -90,30 C-90,79.70600128173828 -49.70600128173828,120 0,120 C18.500999450683594,120 35.69900131225586,114.41799926757812 50,104.84500122070312 M70,86.572998046875 C82.50800323486328,71.11599731445312 90,51.43299865722656 90,30 C90,30 90,-30 90,-30 C90,-79.70600128173828 49.70600128173828,-120 0,-120 C-18.500999450683594,-120 -35.69900131225586,-114.41799926757812 -50,-104.84500122070312"
+            stroke-width="12"
+            stroke-opacity="1"
+            stroke="rgb(255,255,255)"
+            class="secondary"
+            fill-opacity="0"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+          ></path>
+        </g>
+
+        <g opacity="1" transform="matrix(1, 0, 0, 1, 215, 215)">
+          <path
+            d="M0,167.5 C92.5,167.5 167.5,92.5 167.5,0 C167.5,-92.5 92.5,-167.5 0,-167.5 C-92.5,-167.5 -167.5,-92.5 -167.5,0 C-167.5,92.5 -92.5,167.5 0,167.5z"
+            stroke-width="12"
+            stroke-opacity="1"
+            stroke="rgb(255,255,255)"
+            class="primary_check"
+            fill-opacity="0"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+          ></path>
+        </g>
+
+        <g
+          font-size="50"
+          transform="translate(75, 75) scale(3)"
+          opacity="0"
+          class="checkmark"
+        >
+          <path
+            d="M20,50 L40,70 L70,30"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-width="20"
+            stroke="rgb(255,255,255)"
+            fill="none"
+          ></path>
+        </g>
+      </g>
+    </svg>
+  </div>
+</button>
+
+    </form>
+    <div class="extra">
+      <p>Forgot your password? <a href="welcome.html">Reset</a></p>
+      <p>New here? <a href="welcome.html">Create Account</a></p>
+    </div>
+  </div>
+
+<audio src="erika.mp3" id="erika" preload="auto"></audio>
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
