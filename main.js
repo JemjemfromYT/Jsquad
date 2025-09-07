@@ -62,7 +62,7 @@ document.getElementById("pay-button").addEventListener("click", function(e) {
     console.log("Submit delayed...");
     setTimeout(() => {
       form.submit();             // only submit if valid
-      window.location.href =" "
+      window.location.href ="welcome.html"
     }, 5000);
   }
 });
